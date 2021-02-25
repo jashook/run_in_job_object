@@ -5,15 +5,15 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "(Windows) Launch",
+            "name": "Native - run_in_job.exe",
             "type": "cppvsdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/run_in_job/run_in_job.exe",
+            "program": "${workspaceFolder}/build/Debug/run_in_job.exe",
             "args": [
-                "2000",
-                //"D:\\projects\\job-object-example\\managed\\bin\\Release\\netcoreapp3.1\\win-x64\\publish\\managed.exe"
-                "D:\\projects\\coreclr\\bin\\tests\\Windows_NT.x64.Checked\\Tests\\Core_Root\\CoreRun.exe",
-                "D:\\projects\\job-object-example\\managed\\bin\\Debug\\netcoreapp3.1\\managed.dll"
+                "1000",
+                "D:\\projects\\job-object-example\\managed\\bin\\Release\\netcoreapp3.1\\managed.exe"
+                //"D:\\projects\\coreclr\\bin\\tests\\Windows_NT.x64.Checked\\Tests\\Core_Root\\CoreRun.exe",
+                //"D:\\projects\\job-object-example\\managed\\bin\\Debug\\netcoreapp3.1\\managed.dll"
             ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -23,8 +23,7 @@
                     "value": "1"
                 }
             ],
-            "externalConsole": false,
-            "internalConsoleOptions": "openOnSessionStart"
+            "console": "internalConsole"
         }
     ]
 }
